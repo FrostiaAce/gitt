@@ -25,8 +25,8 @@ db.connect(err => {
 });
 
 // Routes
-app.get("/products", (req, res) => {
-  db.query("SELECT name, price, image_url FROM products", (err, result) => {
+app.get("/barang", (req, res) => {
+  db.query("SELECT name, price, image_url FROM barang", (err, result) => {
     if (err) {
       console.error("Query error:", err);
       return res.status(500).json({ error: "Database query failed" });
