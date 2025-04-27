@@ -4,7 +4,7 @@ on:
   push:
     branches:
       
-main # bisa ganti ke branch yang kamu mau
+      - main # bisa ganti ke branch yang kamu mau
 
 jobs:
   deploy:
