@@ -28,12 +28,12 @@ jobs:
           
           sudo git reset --hard HEAD
           sudo git clean -fd
-          sudo git remote add origin https://github.com/NewEntery/CloudComputingWebServer.git
+          sudo git remote add origin https://github.com/FrostiaAce/gitt.git
           sudo git pull origin main
           sudo systemctl reload httpd 
         
           echo "SSH to Backend Instance..."
-          ssh -i ~/Tes.pem ec2-user@30.0.2.11 << 'INNER_EOF'
+          ssh -i ~/B99.pem ec2-user@10.0.2.8 << 'INNER_EOF'
             cd CloudComputingWebServer/BackEnd
             sudo git reset --hard HEAD
             sudo git clean -fd
