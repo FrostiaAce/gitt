@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Produk E-Commerce</title>
+  <title>Produk</title>
   <style>
     .produk { margin: 20px; padding: 10px; border: 1px solid #ccc; width: 250px; display: inline-block; vertical-align: top; }
     img { width: 100%; }
   </style>
 </head>
 <body>
-  <h1>Daftar Handphone E-Commerce</h1>
+  <h1>Daftar</h1>
   <div id="produk-list"></div>
 
   <script>
-    fetch("/api/products")
+    fetch("/api/barang")
       .then(res => res.json())
       .then(data => {
         const container = document.getElementById("produk-list");
